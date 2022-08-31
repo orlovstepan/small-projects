@@ -1,0 +1,28 @@
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+textarea {
+  max-width: 50vw;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.under-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 50vw;
+}
+
+.under-text p {
+  color: grey;
+}

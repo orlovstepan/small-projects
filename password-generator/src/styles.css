@@ -1,0 +1,52 @@
+body {
+  background-image: url(background.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  margin-top: 20vh;
+  font-family: monospace;
+  color: rgb(214, 142, 142);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin: 10px;
+  background-color: rgb(255, 231, 231);
+  text-align: center;
+  color: rgb(82, 77, 77);
+}
+
+#password {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-settings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+button {
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 231, 231);
+  box-shadow: 5px 5px;
+}
+
+#length-num {
+  width: 2px;
+}
