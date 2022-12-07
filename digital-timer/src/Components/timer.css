@@ -1,0 +1,12 @@
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicators h3 {
+  margin: 10px;
+}
+
+hr {
+  width: 30vw;
+}
