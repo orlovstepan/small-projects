@@ -4,15 +4,13 @@ import { useEffect, useState } from "react";
 function App() {
   const [news, setNews] = useState([]);
 
-  console.log("news", news);
-
-  const test = news.map((company) => company);
-
-  console.log("test", test);
+  // console.log("news", news);
 
   const options = {
     method: "GET",
     headers: {
+      //doesn't work
+      // "X-RapidAPI-Key": {process.env.RapidAPI_KEY},
       "X-RapidAPI-Key": "9bbe294f7dmshc30983427c236a6p1ebd8djsnc97b69871d78",
       "X-RapidAPI-Host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
     },
@@ -43,23 +41,6 @@ function App() {
         .catch((err) => console.error(err)),
     ]).then((data) => setNews(data));
   }, []);
-
-  // useEffect(() => {
-  //   let promisedNews = fetch(
-  //     "https://apidojo-yahoo-finance-v1.p.rapidapi.com/auto-complete?q=apple&region=US",
-  //     options
-  //   )
-  //     .then((response) => response.json())
-  //     .then((stock) => stock.news)
-  //     .catch((err) => console.error(err));
-
-  //   const getNews = async () => {
-  //     const news = await promisedNews;
-  //     setNews(news);
-  //   };
-
-  //   getNews();
-  // }, []);
 
   return (
     <div className="App">

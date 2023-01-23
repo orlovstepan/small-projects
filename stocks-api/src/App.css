@@ -14,7 +14,6 @@ ul {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 32vw;
   padding: 15px;
   font-size: 15px;
