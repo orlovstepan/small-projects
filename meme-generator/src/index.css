@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+
+header > img {
+  width: 4vw;
+  margin: 0 10px 0 40px;
+}
+
+header > h1 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 24px;
+  letter-spacing: -0.1em;
+}
+
+.meme {
+  margin: 36px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 27vw;
+  height: 8vh;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 2vw;
+  font-size: 1.3rem;
+}
+
+/* input[type="text" i] {
+  padding: 1px 25px;
+  font-size: 1.3rem;
+} */
+
+.text-form {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Karla";
+  font-style: normal;
+}
+
+.button-generate {
+  height: 8vh;
+  width: 70%;
+  margin-top: 15px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
