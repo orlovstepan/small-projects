@@ -8,7 +8,7 @@ export const generatePassword = ({ lowercase, uppercase, special, length }) => {
     numbers,
     lowercase ? lcasechars : [],
     uppercase ? ucasechars : [],
-    special ? specialchars : []
+    special ? specialchars : [],
   ].join("");
 
   return Array.from({ length }, () =>

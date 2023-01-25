@@ -1,15 +1,13 @@
-import React from "react";
+import { useState } from "react";
 import memes from "../memesData";
 
 function Meme() {
+  const [memeImage, setMemeImage] = useState("");
+  console.log(memeImage);
   function getRandomMeme() {
     const randomIndex = Math.floor(Math.random() * memes.data.memes.length);
     const meme = memes.data.memes[randomIndex];
-    return meme.url;
-  }
-
-  function handleClick() {
-    console.log("hello");
+    return setMemeImage(meme.url);
   }
 
   return (
