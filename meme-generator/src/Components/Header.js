@@ -1,12 +1,8 @@
-import React from "react";
-
-function Header() {
+export default function Header() {
   return (
-    <header>
-      <img src="Trollface.png" alt="trollface" />
-      <h1>Meme Generator</h1>
+    <header className="header">
+      <img src="./Trollface.png" className="header--image" alt="trollface" />
+      <h2 className="header--title">Meme Generator</h2>
     </header>
   );
 }
-
-export default Header;
