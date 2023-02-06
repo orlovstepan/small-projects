@@ -40,6 +40,8 @@ main {
   grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
   margin-bottom: 17px;
+  max-width: 55%;
+  margin-left: 22%;
 }
 
 .form--input {
