@@ -53,6 +53,11 @@ main {
   background-color: steelblue;
 }
 
+.searchbar{
+  display:flex;
+  justify-content: space-between;
+}
+
 input {
   width: 20%;
   position: relative;
@@ -71,6 +76,19 @@ input:focus {
   box-shadow: 0 0 1px gray;
 }
 
+select{
+  width: 20%;
+  height: 5vh;
+  padding-left: 20px;
+  background-color: aliceblue;
+  /** for the dropdown indicator */
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
 .copy {
   width: 20px;
   visibility: hidden;
@@ -84,4 +102,17 @@ input:focus {
 
 #email {
   cursor: pointer;
+}
+
+.btn-add{
+  position: relative;
+  top: -30px;
+  left: 880px;
+  display:block;
+  height: 50px;
+  width: 50px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  border: 1px solid green;
+  font-size: 30px;
 }
